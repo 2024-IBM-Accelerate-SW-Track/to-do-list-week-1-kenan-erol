@@ -8,7 +8,7 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      todos: [],
+      todos: []
     };
   }
   // the addTodo function simply creates a new array that includes the user submitted todo item and then
@@ -30,7 +30,7 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <p> <Todos todos={this.state} /></p>
+        <p> <Todos todos={this.state.todos} /></p>
         <h1><AddTodo addTodo={this.addTodo} /></h1>
       </div>
     );
